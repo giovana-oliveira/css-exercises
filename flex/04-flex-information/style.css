@@ -10,7 +10,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
-  text-align: center;
+  text-align: center; /* this should be on body. that way, every inline-level element inside body (block) will be centered 
+  this removes the need for duplicating justify-content below */
   margin-bottom: 32px;
 }
 
@@ -20,7 +21,7 @@ img {
   gap: 52px;
 }
 
-.item {
+.item { /* unnecessary. max-width would be enough */
   display: flex;
   flex-flow: row wrap;
   flex-basis: 200px;
